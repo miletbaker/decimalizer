@@ -6,6 +6,13 @@ Create virtual attributes on ActiveRecord models for accessing money values stor
 Installation (Rails)
 ====================
 
+To install the gem
+
+	gem sources -a http://gems.github.com
+	sudo gem install miletbaker-decimalizer
+
+To install as a plugin
+
 	cd into your Rails root folder
 	script/plugin install git://github.com/miletbaker/decimalizer.git
 
