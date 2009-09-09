@@ -3,15 +3,15 @@ Decimalizer
 
 Create virtual attributes on ActiveRecord models for accessing money values stored in pence/cents as an int as decimals. Rails validation compatible.
 
-Installation (Rails)
-====================
+Installation
+============
 
 To install the gem
 
 	gem sources -a http://gems.github.com
 	sudo gem install miletbaker-decimalizer
 
-To install as a plugin
+To install as a plugin (Rails)
 
 	cd into your Rails root folder
 	script/plugin install git://github.com/miletbaker/decimalizer.git
