@@ -6,6 +6,24 @@ Create virtual attributes on ActiveRecord models for accessing money values stor
 Installation
 ============
 
+Rails 2.1 or greater
+--------------------
+
+To install the gem, Rails 2.1 or later, add the gem.config line in environment.rb as follows
+
+	Rails::Initializer.run do |config|
+	...
+	  	config.gem "miletbaker-decimalizer", :lib => "decimalizer", :source => "http://gems.github.com"
+	...
+	end
+	
+then
+
+	sudo rake gems:install
+
+Earlier versions of Rails and other Ruby frameworks
+----------------------------------------------
+
 To install the gem
 
 	gem sources -a http://gems.github.com
@@ -15,6 +33,10 @@ To install as a plugin (Rails)
 
 	cd into your Rails root folder
 	script/plugin install git://github.com/miletbaker/decimalizer.git
+	
+Then require the library where needed, i.e. in environment.rb in older rails
+
+	require 'decimalizer'
 
 Example
 =======
